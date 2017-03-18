@@ -53,18 +53,16 @@ $(function() {
 
 
     describe('The menu', function(){
-      var $menuIcon, $menu, $body;
+      var $menuIcon, $body;
 
       beforeEach(function(){
        $menuIcon = $('.menu-icon-link');
        $body = $('body')[0];
-       $menu = $('.menu-icon-link')[0];
       });
 
       afterEach(function(){
        $menuIcon = null;
        $body = null;
-       $menu = null;
       });
 
 
@@ -77,11 +75,18 @@ $(function() {
           expect($body.getAttribute('class')).toContain('menu-hidden');
         });
 
-     /* TODO: Write a test that ensures the menu changes
+     /* A test that ensures the menu changes
       * visibility when the menu icon is clicked. This test
       * should have two expectations: does the menu display when
       * clicked and does it hide when clicked again.
       */
+      it('should change visibility onclick', function(){
+        $menuIcon.trigger('click');
+        expect($body.getAttribute('class')).not.toContain('menu-hidden');
+
+        $menuIcon.trigger('click');
+        expect($body.getAttribute('class')).toContain('menu-hidden');
+      });
     });
 
 
