@@ -72,7 +72,7 @@ $(function() {
        * hiding/showing of the menu element.
        */
        it('is hidden by default', function(){
-          expect($body.getAttribute('class')).toContain('menu-hidden');
+          expect($body.classList).toContain('menu-hidden');
         });
 
      /* A test that ensures the menu changes
@@ -82,10 +82,10 @@ $(function() {
       */
       it('should change visibility onclick', function(){
         $menuIcon.trigger('click');
-        expect($body.getAttribute('class')).not.toContain('menu-hidden');
+        expect($body.classList).not.toContain('menu-hidden');
 
         $menuIcon.trigger('click');
-        expect($body.getAttribute('class')).toContain('menu-hidden');
+        expect($body.classList).toContain('menu-hidden');
       });
     });
 
