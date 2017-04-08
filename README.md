@@ -3,8 +3,8 @@
 In this project, my task is to write a number of tests against a given web-based application that reads RSS feeds. The project uses [Jasmine](https://jasmine.github.io/) to test the underlying logic of the application as well as DOM manipulation and asynchronous function testing. The live demo of this project is available [here](https://rehanumar.github.io/p6-feed-reader-testing/index.html).
 
 ## How to run the application
-* Download the repository as zip file in your computer or clone it
-* Open the `index.html` file in your browser
+* Download the repository as zip file in your computer or fork it
+* Run local server
 
 ## Brief explanation of tests
 1. Make sure that the `allFeeds` variable has been defined and that it is not empty.
