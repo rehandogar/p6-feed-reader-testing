@@ -9,6 +9,7 @@
  * to ensure they don't run until the DOM is ready.
  */
 $(function() {
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
     /* This is our first test suite - a test suite just contains
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
@@ -108,8 +109,10 @@ $(function() {
     describe('New Feed Selection', function(){
       var oldFeed;
       beforeEach(function(done){
-        oldFeed = $('.feed')[0].innerHTML;
-        loadFeed(1, done);
+        loadFeed(1, function(){
+          oldFeed = $('.feed')[0].innerHTML;
+          loadFeed(2, done);
+        });
       });
         /* A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
