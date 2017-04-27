@@ -13,7 +13,7 @@ In this project, my task is to write a number of tests against a given web-based
 4. Make sure that the menu element is hidden by default. I will have to analyze the HTML and the CSS to determine how the application is performing the hiding/showing of the menu element.
 5. Make sure that the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display when clicked and does it hide when clicked again.
 6. Make sure that when the `loadFeed` function is called and completes its work, there is at least a single `.entry` element within the `.feed container`. As, `loadFeed()` is asynchronous so this test will require the use of Jasmine's `beforeEach` and asynchronous `done()` function.
-7. Make sure that when a new feed is loaded by the `loadFeed` function that the don'ts.
+7. Make sure that when a new feed is loaded by the `loadFeed` function that the content actually changes.
 
 ## Questions?
 If you have any questions, then don't hesitate to email me (rehanumardogar[at]gmail.com)
