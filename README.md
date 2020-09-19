@@ -1,6 +1,6 @@
 # p6-feed-reader-testing
 
-In this project, my task is to write a number of tests against a given web-based application that reads RSS feeds. The project uses [Jasmine](https://jasmine.github.io/) to test the underlying logic of the application as well as DOM manipulation and asynchronous function testing. The live demo of this project is available [here](https://rehanumar.github.io/p6-feed-reader-testing/index.html).
+In this project, my task is to write a number of tests against a given web-based application that reads RSS feeds. The project uses [Jasmine](https://jasmine.github.io/) to test the underlying logic of the application as well as DOM manipulation and asynchronous function testing. The live demo of this project is available [here](https://rehanumar.github.io/p6-feed-reader-testing/index.html). (it's dependent on 3rd party apis like jsapi of google)
 
 ## How to run the application
 * Download the repository as zip file in your computer or fork it
